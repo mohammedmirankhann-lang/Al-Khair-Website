@@ -530,3 +530,28 @@ fieldset.field{border:0;padding:0;margin:0}
 .seed-photos .cell:nth-child(2){transform:translateY(-24px)}
 @media (max-width:860px){.seed{grid-template-columns:minmax(0,1fr);gap:28px}.seed-photos{padding-top:0}.seed-photos .cell:nth-child(2){transform:none}}
 .gallery{grid-auto-flow:dense}
+
+/* ===== V8: systematic grids ===== */
+.seed{grid-template-columns:minmax(0,1fr);gap:36px;justify-items:center}
+.seed .h-quote{max-width:28ch}
+.seed-photos{width:100%;max-width:920px;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding-top:0}
+.seed-photos .cell{aspect-ratio:4/5}
+.seed-photos .cell:nth-child(2){transform:none}
+/* glimpse: one size for every photo */
+.glimpse{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:auto;gap:12px}
+.glimpse .cell{aspect-ratio:4/3}
+@media (max-width:700px){.glimpse{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
+/* gallery: uniform tiles */
+.gallery{grid-auto-rows:auto;gap:12px}
+.gallery button,.gallery button.wide{grid-column:auto;aspect-ratio:4/3;height:auto}
+@media (max-width:760px){.gallery{gap:8px}}
+/* visits: 2 wide over 3 equal */
+.visits{grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:auto;gap:12px}
+.visits .cell{grid-column:span 2;aspect-ratio:4/3}
+.visits .cell.w{grid-column:span 3;aspect-ratio:16/9}
+@media (max-width:760px){.visits{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.visits .cell,.visits .cell.w{grid-column:span 1;aspect-ratio:4/3}.visits .cell:last-child{grid-column:span 2;aspect-ratio:16/9}}
+/* one gap size across photo grids */
+.h-c3,.teach,.three,.beyond{gap:20px}
+.pair,.quad,.org-media,.strip-photos{gap:12px}
+
+.h-c3 figure,.c-card,.b-card{align-content:start}

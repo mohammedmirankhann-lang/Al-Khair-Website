@@ -319,16 +319,16 @@ home = f'''
 </div></section>
 
 <section class="sec"><div class="wrap seed">
-  <div class="stack">
+  <div class="stack" style="justify-items:center;text-align:center">
     <span class="eyebrow">Our Belief</span>
-    <p class="h-quote" style="text-align:left;margin:0">Every child is unique. Like a seed, each one already holds <em>everything it can become.</em></p>
-    <div class="rule"><i></i></div>
-    <p class="muted">With care, patience and the right conditions, it grows. That is how we see every child who walks through our doors.</p>
+    <p class="h-quote">Every child is unique. Like a seed, each one already holds <em>everything it can become.</em></p>
+    <div class="rule center"><i></i></div>
+    <p class="muted" style="max-width:52ch">With care, patience and the right conditions, it grows. That is how we see every child who walks through our doors.</p>
   </div>
   <div class="seed-photos">
-    {C('plant-girl-1', 'A student planting a sapling in front of the Al-Khair Academy crest', '(max-width: 860px) 33vw, 20vw', style='object-position:50% 70%')}
-    {C('plant-boy', 'A student potting a plant during the school plantation drive', '(max-width: 860px) 33vw, 20vw', style='object-position:50% 70%')}
-    {C('plant-girl-3', 'A student caring for a young plant at school', '(max-width: 860px) 33vw, 20vw', style='object-position:50% 70%')}
+    {C('plant-girl-1', 'A student planting a sapling in front of the Al-Khair Academy crest', '(max-width: 700px) 33vw, 300px', style='object-position:50% 72%')}
+    {C('plant-boy', 'A student potting a plant during the school plantation drive', '(max-width: 700px) 33vw, 300px', style='object-position:50% 72%')}
+    {C('plant-girl-3', 'A student caring for a young plant at school', '(max-width: 700px) 33vw, 300px', style='object-position:50% 72%')}
   </div>
 </div></section>
 
@@ -354,14 +354,13 @@ home = f'''
 <section class="sec soft"><div class="wrap">
   <div class="sec-head center"><span class="eyebrow">A Glimpse of Al-Khair</span><h2>Life at our school</h2><div class="rule center"><i></i></div></div>
   <div class="glimpse">
-    <div class="cell big">{pic('hero-children', 'Smiling Al-Khair students in festive dress at a school celebration', '(max-width: 700px) 100vw, 50vw', style='object-position:50% 60%')}</div>
-    <div class="cell wide">{pic('awards', 'Al-Khair Academy team receiving National Winner recognition at the Propel Shiksha Awards', '(max-width: 700px) 100vw, 50vw')}<span class="tag">National Winner · Propel Shiksha Awards</span></div>
-    {C('kes-olympiad', 'Al-Khair students receiving a trophy at the KES Olympiad 2025', S)}
+    {C('stage-dance', 'Nursery students performing on Independence Day', S, style='object-position:50% 60%')}
+    {C('awards', 'Al-Khair Academy team receiving National Winner recognition at the Propel Shiksha Awards', S, style='object-position:50% 40%')}
+    {C('kes-olympiad', 'Al-Khair students receiving a trophy at the KES Olympiad 2025', S, style='object-position:50% 45%')}
+    {C('gandhi-smile', 'A smiling student dressed as Mahatma Gandhi on Independence Day', S, style='object-position:50% 30%')}
+    {C('hero-children', 'Smiling Al-Khair students in festive dress at a school celebration', S, style='object-position:50% 60%')}
+    {C('trip-lalbagh', 'Students on an educational visit to Lal Bagh Palace, Indore', S, style='object-position:50% 55%')}
     {C('prizes', 'Young students with their prize trophies', S, style='object-position:50% 30%')}
-    <div class="cell tall">{pic('gandhi-smile', 'A smiling student dressed as Mahatma Gandhi on Independence Day', S, style='object-position:50% 30%')}</div>
-    <div class="cell wide">{pic('trip-lalbagh', 'Students on an educational visit to Lal Bagh Palace, Indore', '(max-width: 700px) 100vw, 50vw')}</div>
-    <div class="cell tall">{pic('trip-rajwada', 'Students on an educational visit to Rajwada, Indore', S, style='object-position:50% 75%')}</div>
-    {C('sports-trophy', 'Al-Khair team with their trophy at an inter-school event', S)}
     {C('principal-office', 'The Principal welcoming a young student with a gift', S, style='object-position:50% 55%')}
   </div>
   <p style="margin-top:28px;text-align:center"><a class="link-arrow" href="{L('gallery')}">View the full gallery →</a></p>
@@ -487,11 +486,11 @@ community = page_head('Community', 'Learning Together in Khajrana', 'Khajrana is
   <div class="sec-head"><span class="eyebrow">Educational Visits</span><h2>Learning from our city</h2><div class="rule"><i></i></div>
   <p>Indore's heritage is our classroom too. Students visit places such as Rajwada and Lal Bagh Palace, where history and culture become real.</p></div>
   <div class="visits">
-    <div class="tall cell">{pic('trip-rajwada', 'Students at Rajwada, Indore', '(max-width: 760px) 100vw, 25vw', style='object-position:50% 75%')}</div>
-    <div class="wide cell">{pic('trip-lalbagh', 'Students at Lal Bagh Palace, Indore', '(max-width: 760px) 50vw, 50vw')}</div>
-    {C('trip-hall', 'Students on an educational visit', '(max-width: 760px) 50vw, 25vw')}
-    <div class="wide cell">{pic('trip-garden', 'Girls on an educational visit', '(max-width: 760px) 50vw, 50vw')}</div>
-    {C('trip-heritage', 'Students at a heritage site', '(max-width: 760px) 50vw, 25vw')}
+    {C('trip-lalbagh', 'Students at Lal Bagh Palace, Indore', '(max-width: 760px) 100vw, 50vw', cls='w')}
+    {C('trip-garden', 'Girls on an educational visit', '(max-width: 760px) 100vw, 50vw', cls='w')}
+    {C('trip-rajwada', 'Students at Rajwada, Indore', '(max-width: 760px) 50vw, 33vw', style='object-position:50% 72%')}
+    {C('trip-hall', 'Students on an educational visit', '(max-width: 760px) 50vw, 33vw')}
+    {C('trip-heritage', 'Students at a heritage site', '(max-width: 760px) 50vw, 33vw')}
   </div>
 </div></section>
 {admissions_band()}
@@ -502,8 +501,8 @@ write('community', 'community.html', 'Community | KES, Urooj & Learning in Khajr
 
 # ================= GALLERY =================
 G = [
- ('stage-dance', 'Nursery students performing on Independence Day', 'events', True),
- ('independence', 'Independence Day programme on the school stage', 'events', True),
+ ('stage-dance', 'Nursery students performing on Independence Day', 'events', False),
+ ('independence', 'Independence Day programme on the school stage', 'events', False),
  ('tricolour-dance', 'Tricolour ribbon dance on stage', 'events', False),
  ('gandhi-smile', 'A student dressed as Mahatma Gandhi', 'events', False),
  ('freedom-fighters', 'Students dressed as freedom fighters', 'events', False),
@@ -520,15 +519,14 @@ G = [
  ('montessori-hospital', 'Montessori role play: the hospital corner', 'classrooms', False),
  ('montessori-grocer', 'Montessori role play: the green grocer stall', 'classrooms', False),
  ('trip-rajwada', 'Educational visit to Rajwada, Indore', 'visits', False),
- ('trip-lalbagh', 'Educational visit to Lal Bagh Palace, Indore', 'visits', True),
+ ('trip-lalbagh', 'Educational visit to Lal Bagh Palace, Indore', 'visits', False),
  ('sports-trophy', 'Al-Khair team with their trophy at an inter-school event', 'sports achievements', False),
  ('prizes', 'Young students with their prize trophies', 'achievements', False),
  ('hero-children', 'Students in festive dress at a school celebration', 'events', False),
  ('trip-heritage', 'Students on a heritage visit', 'visits', False),
  ('confidence', 'A student speaking on stage', 'events', False),
- ('craft', 'Nursery children with their classroom craft wall', 'classrooms', False),
  ('trip-hall', 'Students on an educational visit', 'visits', False),
- ('urooj-stage', 'UROOJ 2026, Unfolding Stories of Success, Indore', 'community', True),
+ ('urooj-stage', 'UROOJ 2026, Unfolding Stories of Success, Indore', 'community', False),
  ('urooj-girls', 'Students registering at UROOJ 2026', 'community', False),
  ('jashn-group', 'Jashn-e-Azadi community celebration', 'community', False),
  ('football', 'Students heading onto the football ground', 'sports', False),
@@ -536,7 +534,6 @@ G = [
  ('trip-garden', 'Girls on an educational visit', 'visits', False),
  ('award', 'A student receiving a prize with his family', 'events achievements', False),
  ('campus', 'Students walking to class past the school bus', 'campus', False),
- ('jashn-speech', 'Address at the Jashn-e-Azadi celebration', 'community', False),
 ]
 POS = {'plant-girl-1': 'object-position:50% 70%', 'plant-boy': 'object-position:50% 70%', 'plant-girl-2': 'object-position:50% 70%', 'plant-girl-3': 'object-position:50% 70%', 'tricolour-dance': 'object-position:50% 25%', 'gandhi-smile': 'object-position:50% 30%', 'freedom-fighters': 'object-position:50% 25%', 'costume-drama': 'object-position:50% 30%', 'football-team': 'object-position:50% 35%', 'principal-office': 'object-position:50% 55%', 'confidence': 'object-position:50% 30%', 'flags': 'object-position:50% 30%', 'trip-rajwada': 'object-position:50% 75%', 'campus': 'object-position:50% 60%'}
 gal = ''.join(f'<button type="button" class="{"wide" if w else ""}" data-cat="{c}">{pic(n, a, "(max-width: 760px) 50vw, 33vw", full=True, style=POS.get(n, ""))}</button>' for n, a, c, w in G)
