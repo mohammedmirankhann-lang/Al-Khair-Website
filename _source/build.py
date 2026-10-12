@@ -263,6 +263,7 @@ def write(key, filename, title, desc, body, schema=None, noindex=False, active=N
 IG = 'https://www.instagram.com/al_khairacademy/'
 YT = 'https://www.youtube.com/@AL-KHAIRACADEMYY'
 SCHOOL['sameAs'] = [IG, YT]
+ICON['quran'] = '<svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 10c-4-3-9-3-13-2v19c4-1 9-1 13 2 4-3 9-3 13-2V8c-4-1-9-1-13 2z"/><path d="M18 10v19"/><path class="g" d="M9 14h5M9 18h5M22 14h5M22 18h5"/></svg>'
 ICON['ig'] = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg>'
 ICON['yt'] = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5"/><path d="M10 9.5v5l4.5-2.5z"/></svg>'
 ICON['pin'] = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>'
@@ -337,7 +338,7 @@ home = f'''
   <div class="teach">
     <a href="{L('gallery')}">{C('montessori-hospital', 'Nursery children playing doctor in a Montessori role-play corner', S)}<h3>Montessori Nursery</h3><p>Learning by doing, from age 3.</p></a>
     <a href="{PROPEL}" target="_blank" rel="noopener"><div class="tv pattern">{ICON['tv']}</div><h3>Smart Class</h3><p>Propel audio-visual lessons on smart TVs.</p></a>
-    <a href="{UQ}" target="_blank" rel="noopener">{C('dua', 'Teachers and staff in dua at the annual function', S, style='object-position:50% 70%')}<h3>Understanding Quran</h3><p>Meaning, hadith, duas and sunnah, from a young age.</p></a>
+    <a href="{UQ}" target="_blank" rel="noopener"><div class="tv pattern">{ICON['quran']}</div><h3>Understanding Quran</h3><p>Meaning, hadith, duas and sunnah, from a young age.</p></a>
     <a href="{L('community')}">{C('dance', 'Students forming a human pyramid at the annual function', S)}<h3>Activities</h3><p>Olympiads, sports, visits and the annual function.</p></a>
   </div>
 </div></section>
@@ -512,7 +513,6 @@ G = [
  ('urooj-girls', 'Students registering at UROOJ 2026', 'community', False),
  ('jashn-group', 'Jashn-e-Azadi community celebration', 'community', False),
  ('football', 'Students heading onto the football ground', 'sports', False),
- ('dua', 'Teachers and staff in dua at the annual function', 'events', False),
  ('flags', 'Young students performing with the tricolour', 'events', False),
  ('trip-garden', 'Girls on an educational visit', 'visits', False),
  ('awards-2', 'Al-Khair team at the Propel Shiksha Awards', 'achievements', False),
