@@ -138,8 +138,9 @@ FAQ = [
     ('How is Nursery taught?',
      'Our Nursery follows the Montessori method: children learn by doing, through hands-on materials, '
      'activities and role play.'),
-    ('Is there an entrance test?',
-     'Yes. Students appear for an entrance test, and the school office shares the details for each class.'),
+    ('Is there an entrance test or interview for admission?',
+     'No. In line with the RTE Act, 2009, there is no admission test and no screening of children or parents. '
+     'After admission, our teachers get to know each child so they can support them from the first day.'),
     ('Which documents are needed for admission?',
      'Aadhaar Card, Samagra ID, Birth Certificate and Caste Certificate.'),
     ('Is religious education included?',

@@ -6,7 +6,7 @@ from pages import Page
 STEPS = [
     ('Enquire', 'Send the enquiry form, message us on WhatsApp or call the school office.'),
     ('Visit the school', 'Meet the office team, see the campus and collect the admission form.'),
-    ('Entrance test', "Students appear for an entrance test. The office shares the details for your child's class."),
+    ('Admission form', 'Fill in the admission form with your child\'s details. There is no admission test or interview.'),
     ('Submit documents', 'Hand in the completed form with the required documents.'),
     ('Confirmation', 'The office confirms admission and explains the next steps.'),
 ]
@@ -62,6 +62,6 @@ def render():
         key='admissions', file='admissions.html',
         title='Admissions & Enquiry | Al-Khair Academy, Khajrana Indore',
         description=('Admissions at Al-Khair Academy, Indore for Nursery (age 3+, Montessori) to Class 8. State Board, '
-                     'CBSE pattern. Process, entrance test, documents, uniform, FAQ and enquiry form.'),
+                     'CBSE pattern. Admission process, documents, uniform, FAQ and enquiry form.'),
         body=body, schema=[breadcrumb_schema('admissions', 'Admissions'), FAQ_SCHEMA],
     )
