@@ -420,7 +420,7 @@ leadership = page_head('Leadership', 'The people behind Al-Khair', 'Al-Khair Aca
   <div class="stack"><span class="eyebrow">Since 2018</span><h2>Our story</h2><div class="rule"><i></i></div>
     <p>Al-Khair Academy was founded by Adv. Rehana Khan with a clear purpose: a school where every child is seen as an individual, where good marks and good manners matter equally, and where faith and learning grow together.</p>
     <p>Today the school serves families across Khajrana and Indore from Nursery to Class 8.</p></div>
-  <div class="frame r43">{pic('awards-2', 'Al-Khair Academy team at the Propel Shiksha Awards')}</div>
+  <div class="frame r43">{pic('independence', 'Al-Khair Academy students on stage at the school Independence Day programme')}</div>
 </div></section>
 {admissions_band()}
 {contact_band()}'''
@@ -515,7 +515,6 @@ G = [
  ('football', 'Students heading onto the football ground', 'sports', False),
  ('flags', 'Young students performing with the tricolour', 'events', False),
  ('trip-garden', 'Girls on an educational visit', 'visits', False),
- ('awards-2', 'Al-Khair team at the Propel Shiksha Awards', 'achievements', False),
  ('award', 'A student receiving a prize with his family', 'events achievements', False),
  ('campus', 'Students walking to class past the school bus', 'campus', False),
  ('jashn-speech', 'Address at the Jashn-e-Azadi celebration', 'community', False),
