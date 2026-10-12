@@ -132,7 +132,7 @@ def page_head(eyebrow, h1, lead, label):
 
 def legal_line():
     return (f'© <span id="year">2026</span> {cfg.NAME}, Khajrana, Indore · DISE Code {cfg.DISE_CODE} · '
-            f'Affiliation No. {cfg.AFFILIATION_NO}')
+            f'Recognition Code {cfg.RECOGNITION_CODE} · Run by {cfg.SOCIETY}')
 
 
 # ---------- page frame ----------
@@ -316,6 +316,39 @@ def enquiry_form():
   <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
 </div>
 </div>'''
+
+
+RECOGNITION_FACTS = [
+    ('Recognised by', cfg.RECOGNISED_BY),
+    ('Recognition Code', cfg.RECOGNITION_CODE),
+    ('School ID', cfg.SCHOOL_ID),
+    ('Classes recognised', f'Pre-primary (Nursery) to Class 8 · {cfg.SCHOOL_LEVEL}'),
+    ('Valid', cfg.RECOGNITION_VALID),
+    ('Run by', cfg.SOCIETY),
+]
+# Facilities recorded at the government inspection for recognition
+FACILITIES = ['11 classrooms', 'Library', 'Playground', 'Sports equipment', 'Teaching and learning material',
+              'Separate toilets for boys and girls', 'Clean drinking water', 'Barrier-free access']
+
+
+def recognition_section(soft=False):
+    """Government recognition details and inspected facilities, with a link to the certificate."""
+    facts = '\n      '.join(f'<div><span class="k">{k}</span><span class="v">{v}</span></div>' for k, v in RECOGNITION_FACTS)
+    facilities = ''.join(f'<li>{f}</li>' for f in FACILITIES)
+    return f'''<section class="sec{" soft" if soft else ""}" id="recognition"><div class="wrap split align-start">
+  <div class="stack">
+    <span class="eyebrow">Government Recognition</span><h2>A recognised school</h2>{rule()}
+    <p>Al-Khair Academy is recognised by the {cfg.RECOGNISED_BY} under {cfg.RECOGNITION_ACT}. The recognition was renewed on {cfg.RECOGNITION_DATE}.</p>
+    <div class="facts-list">
+      {facts}
+    </div>
+    <a class="link-arrow" href="{asset(cfg.RECOGNITION_PDF)}" target="_blank" rel="noopener">View the recognition certificate (PDF) →</a>
+  </div>
+  <div class="stack">
+    <span class="eyebrow">Facilities</span><h3>Recorded at the government inspection</h3>
+    <ul class="doclist">{facilities}</ul>
+  </div>
+</div></section>'''
 
 
 def breadcrumb_schema(key, label):

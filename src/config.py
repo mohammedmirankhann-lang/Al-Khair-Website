@@ -13,7 +13,18 @@ FOUNDED = '2018'
 BOARD = 'State Board · CBSE Pattern'
 CLASSES = 'Nursery to Class 8'
 DISE_CODE = '23260104272'
-AFFILIATION_NO = '82237'
+
+# Government recognition (from the recognition certificate dated 27 March 2025,
+# public/assets/docs/recognition-certificate-2025.pdf)
+SOCIETY = 'Al Khair Educational And Social Welfare Society'
+RECOGNITION_CODE = '82237'
+SCHOOL_ID = 'PS82237'
+RECOGNISED_BY = 'Zila Shiksha Kendra (District Education Centre), Indore'
+RECOGNITION_ACT = 'Section 18 of the Right of Children to Free and Compulsory Education (RTE) Act, 2009'
+RECOGNITION_DATE = '27 March 2025'
+RECOGNITION_VALID = '1 April 2025 to 31 March 2028'
+SCHOOL_LEVEL = 'Primary cum Middle School'
+RECOGNITION_PDF = 'docs/recognition-certificate-2025.pdf'   # under public/assets/
 
 # Contact
 PHONE_DISPLAY = '+91 62646 72034'
@@ -71,4 +82,18 @@ SCHOOL_SCHEMA = {
                 'addressRegion': 'Madhya Pradesh', 'postalCode': '452016', 'addressCountry': 'IN'},
     'areaServed': 'Indore', 'award': 'National Winner, Propel Shiksha Awards',
     'sameAs': [INSTAGRAM, YOUTUBE],
+    'parentOrganization': {'@type': 'Organization', 'name': SOCIETY},
+    'identifier': [
+        {'@type': 'PropertyValue', 'propertyID': 'Recognition Code', 'value': RECOGNITION_CODE},
+        {'@type': 'PropertyValue', 'propertyID': 'School ID', 'value': SCHOOL_ID},
+        {'@type': 'PropertyValue', 'propertyID': 'DISE Code', 'value': DISE_CODE},
+    ],
+    'hasCredential': {
+        '@type': 'EducationalOccupationalCredential',
+        'name': 'School recognition under the RTE Act, 2009',
+        'credentialCategory': 'Government school recognition',
+        'recognizedBy': {'@type': 'GovernmentOrganization', 'name': RECOGNISED_BY},
+        'validIn': {'@type': 'AdministrativeArea', 'name': 'Madhya Pradesh'},
+        'url': DOMAIN + '/assets/' + RECOGNITION_PDF,
+    },
 }

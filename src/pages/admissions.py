@@ -1,5 +1,5 @@
 """Admissions: key facts, process, documents, enquiry form, uniform, FAQ."""
-from components import breadcrumb_schema, contact_band, enquiry_form, page_head, pic, rule
+from components import breadcrumb_schema, contact_band, enquiry_form, page_head, pic, recognition_section, rule
 from content import FAQ
 from pages import Page
 
@@ -56,6 +56,7 @@ def render():
   </div>
   <div class="stack" id="faq"><span class="eyebrow">FAQ</span><h2>Questions parents ask</h2>{rule()}<div class="faq">{faq}</div></div>
 </div></section>
+{recognition_section(soft=True)}
 {contact_band()}'''
     return Page(
         key='admissions', file='admissions.html',

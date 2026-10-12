@@ -1,4 +1,5 @@
 """Leadership: Director's and Principal's messages, team, recognition, our story."""
+import config as cfg
 from components import (admissions_band, asset, breadcrumb_schema, contact_band, page_head, pic, rule,
                         sec_head)
 from content import MESSAGES, TEAM
@@ -53,7 +54,7 @@ def render():
 <section class="sec"><div class="wrap split">
   <div class="stack"><span class="eyebrow">Since 2018</span><h2>Our story</h2>{rule()}
     <p>Al-Khair Academy was founded by Adv. Rehana Khan with a clear purpose: a school where every child is seen as an individual, where good marks and good manners matter equally, and where faith and learning grow together.</p>
-    <p>Today the school serves families across Khajrana and Indore from Nursery to Class 8.</p></div>
+    <p>Today the school serves families across Khajrana and Indore from Nursery to Class 8. It is run by {cfg.SOCIETY} and recognised by the {cfg.RECOGNISED_BY}.</p></div>
   <div class="frame r43">{pic('independence', 'Al-Khair Academy students on stage at the school Independence Day programme')}</div>
 </div></section>
 {admissions_band()}

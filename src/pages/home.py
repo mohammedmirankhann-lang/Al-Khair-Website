@@ -36,6 +36,7 @@ def opening():
     <div><b>Montessori</b><span>Nursery, age 3+</span></div>
     <div><b>{cfg.FOUNDED}</b><span>Established</span></div>
   </div>
+  <p class="trust">Recognised by {cfg.RECOGNISED_BY} under the RTE Act, 2009 · Recognition Code {cfg.RECOGNITION_CODE} · <a href="{link('admissions', 'recognition')}">Details</a></p>
 </div></section>'''
 
 

@@ -129,6 +129,10 @@ TEAM = [
 FAQ = [
     ('Which board does Al-Khair Academy follow?',
      'Al-Khair Academy is a State Board school (Madhya Pradesh), and classes are taught in the CBSE pattern.'),
+    ('Is Al-Khair Academy a recognised school?',
+     'Yes. The school is recognised by the Zila Shiksha Kendra (District Education Centre), Indore under the '
+     'RTE Act, 2009, for Pre-primary (Nursery) to Class 8. Recognition Code 82237, School ID PS82237, '
+     'valid from 1 April 2025 to 31 March 2028. The school is run by Al Khair Educational And Social Welfare Society.'),
     ('Which classes are offered?', 'Nursery to Class 8.'),
     ('What is the age for Nursery admission?', 'Children aged 3 years and above are eligible for Nursery.'),
     ('How is Nursery taught?',
