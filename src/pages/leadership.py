@@ -61,8 +61,8 @@ def render():
 {contact_band()}'''
     return Page(
         key='leadership', file='leadership.html',
-        title='Leadership | Director & Principal | Al-Khair Academy, Khajrana Indore',
-        description=('Messages from Adv. Parvez Khan, Director, and Adv. Rehana Khan, Founder & Principal of '
-                     'Al-Khair Academy, Khajrana, Indore, with the school team and Propel Shiksha Awards recognition.'),
+        title='Director & Principal | Al-Khair Academy, Khajrana Indore',
+        description=('Messages from Director Adv. Parvez Khan and Founder & Principal Adv. Rehana Khan of '
+                     'Al-Khair Academy, Khajrana, Indore. Propel Shiksha Awards National Winner.'),
         body=body, schema=[breadcrumb_schema('leadership', 'Leadership')],
     )

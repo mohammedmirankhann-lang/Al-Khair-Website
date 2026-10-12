@@ -36,8 +36,8 @@ def render():
 {contact_band()}'''
     return Page(
         key='gallery', file='gallery.html',
-        title='Gallery | School Life at Al-Khair Academy, Khajrana Indore',
-        description=('Photos of school life at Al-Khair Academy, Indore: Montessori classrooms, annual function, '
-                     'Propel Shiksha Awards, KES Olympiad, sports, community events and educational visits.'),
+        title='Gallery: School Life | Al-Khair Academy, Khajrana Indore',
+        description=('Photos of school life at Al-Khair Academy, Indore: events, Montessori classrooms, '
+                     'KES Olympiad, plantation drive, educational visits and community.'),
         body=body, schema=[breadcrumb_schema('gallery', 'Gallery')],
     )

@@ -60,8 +60,8 @@ def render():
 {contact_band()}'''
     return Page(
         key='admissions', file='admissions.html',
-        title='Admissions & Enquiry | Al-Khair Academy, Khajrana Indore',
-        description=('Admissions at Al-Khair Academy, Indore for Nursery (age 3+, Montessori) to Class 8. State Board, '
-                     'CBSE pattern. Admission process, documents, uniform, FAQ and enquiry form.'),
+        title='Admissions, Nursery to Class 8 | Al-Khair Academy Indore',
+        description=('Admissions at Al-Khair Academy, Khajrana, Indore for Nursery (age 3+) to Class 8. '
+                     'Process, documents, uniform, FAQ and enquiry form.'),
         body=body, schema=[breadcrumb_schema('admissions', 'Admissions'), FAQ_SCHEMA],
     )

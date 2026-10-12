@@ -101,9 +101,9 @@ def notice():
 def render():
     return Page(
         key='home', file='index.html',
-        title='Al-Khair Academy, Khajrana Indore | State Board School, CBSE Pattern, Nursery to Class 8',
-        description=('Al-Khair Academy, Khajrana, Indore: State Board school with CBSE pattern from Montessori '
-                     'Nursery to Class 8, Understanding Quran, Propel smart classes and the 3C framework. Est. 2018.'),
+        title='Al-Khair Academy Khajrana, Indore | Nursery to Class 8',
+        description=('School in Khajrana, Indore from Montessori Nursery to Class 8. State Board, CBSE pattern, '
+                     'Understanding Quran, smart classes, 3C framework. Admissions open.'),
         body='\n\n'.join([opening(), belief(), three_c(), how_we_teach(), glimpse(), notice()]),
         schema=[cfg.SCHOOL_SCHEMA],
         home_footer=True,

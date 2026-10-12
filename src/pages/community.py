@@ -69,8 +69,8 @@ def render():
 {contact_band()}'''
     return Page(
         key='community', file='community.html',
-        title='Community | KES, Urooj & Learning in Khajrana | Al-Khair Academy Indore',
-        description=('How Al-Khair Academy learns together with Khajrana: Khajrana Educational Society olympiads '
-                     'and sports, Urooj guidance for girls, community celebrations and educational visits in Indore.'),
+        title='Community: KES, Urooj & Khajrana | Al-Khair Academy Indore',
+        description=('Al-Khair Academy and Khajrana: KES olympiads and sports, Urooj guidance for girls, '
+                     'community celebrations and educational visits across Indore.'),
         body=body, schema=[breadcrumb_schema('community', 'Community')],
     )

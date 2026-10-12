@@ -4,7 +4,7 @@ Everything that describes the school itself (name, phone, address, board,
 social accounts) lives here, so a change is made once and appears on every page.
 """
 
-DOMAIN = 'https://alkhairacademy.in'
+DOMAIN = 'https://www.alkhairacademy.in'   # primary domain on Vercel; alkhairacademy.in redirects here
 
 NAME = 'Al-Khair Academy'
 TAGLINE = 'Nurturing Every Child Like a Seed'

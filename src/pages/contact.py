@@ -28,7 +28,7 @@ def render():
     return Page(
         key='contact', file='contact.html',
         title='Contact & Directions | Al-Khair Academy, Khajrana Indore',
-        description=('Contact Al-Khair Academy, 57/2 Haji Colony, Khajrana, Indore 452016. Phone and WhatsApp '
-                     f'{cfg.PHONE_DISPLAY}, email, directions and admission enquiry.'),
+        description=('Contact Al-Khair Academy, 57/2 Haji Colony, Khajrana, Indore 452016. Call or WhatsApp '
+                     f'{cfg.PHONE_DISPLAY}, email or get directions.'),
         body=body, schema=[breadcrumb_schema('contact', 'Contact')],
     )
