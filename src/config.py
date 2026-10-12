@@ -14,8 +14,7 @@ BOARD = 'State Board · CBSE Pattern'
 CLASSES = 'Nursery to Class 8'
 DISE_CODE = '23260104272'
 
-# Government recognition (from the recognition certificate dated 27 March 2025,
-# public/assets/docs/recognition-certificate-2025.pdf)
+# Government recognition (from the recognition certificate dated 27 March 2025)
 SOCIETY = 'Al Khair Educational And Social Welfare Society'
 RECOGNITION_CODE = '82237'
 SCHOOL_ID = 'PS82237'
@@ -24,7 +23,6 @@ RECOGNITION_ACT = 'Section 18 of the Right of Children to Free and Compulsory Ed
 RECOGNITION_DATE = '27 March 2025'
 RECOGNITION_VALID = '1 April 2025 to 31 March 2028'
 SCHOOL_LEVEL = 'Primary cum Middle School'
-RECOGNITION_PDF = 'docs/recognition-certificate-2025.pdf'   # under public/assets/
 
 # Contact
 PHONE_DISPLAY = '+91 62646 72034'
@@ -94,6 +92,5 @@ SCHOOL_SCHEMA = {
         'credentialCategory': 'Government school recognition',
         'recognizedBy': {'@type': 'GovernmentOrganization', 'name': RECOGNISED_BY},
         'validIn': {'@type': 'AdministrativeArea', 'name': 'Madhya Pradesh'},
-        'url': DOMAIN + '/assets/' + RECOGNITION_PDF,
     },
 }

@@ -326,27 +326,16 @@ RECOGNITION_FACTS = [
     ('Valid', cfg.RECOGNITION_VALID),
     ('Run by', cfg.SOCIETY),
 ]
-# Facilities recorded at the government inspection for recognition
-FACILITIES = ['11 classrooms', 'Library', 'Playground', 'Sports equipment', 'Teaching and learning material',
-              'Separate toilets for boys and girls', 'Clean drinking water', 'Barrier-free access']
-
 
 def recognition_section(soft=False):
-    """Government recognition details and inspected facilities, with a link to the certificate."""
-    facts = '\n      '.join(f'<div><span class="k">{k}</span><span class="v">{v}</span></div>' for k, v in RECOGNITION_FACTS)
-    facilities = ''.join(f'<li>{f}</li>' for f in FACILITIES)
-    return f'''<section class="sec{" soft" if soft else ""}" id="recognition"><div class="wrap split align-start">
-  <div class="stack">
-    <span class="eyebrow">Government Recognition</span><h2>A recognised school</h2>{rule()}
-    <p>Al-Khair Academy is recognised by the {cfg.RECOGNISED_BY} under {cfg.RECOGNITION_ACT}. The recognition was renewed on {cfg.RECOGNITION_DATE}.</p>
-    <div class="facts-list">
-      {facts}
-    </div>
-    <a class="link-arrow" href="{asset(cfg.RECOGNITION_PDF)}" target="_blank" rel="noopener">View the recognition certificate (PDF) →</a>
-  </div>
-  <div class="stack">
-    <span class="eyebrow">Facilities</span><h3>Recorded at the government inspection</h3>
-    <ul class="doclist">{facilities}</ul>
+    """Government recognition details (from the recognition certificate)."""
+    facts = '\n    '.join(f'<div><span class="k">{k}</span><span class="v">{v}</span></div>' for k, v in RECOGNITION_FACTS)
+    intro = (f'Al-Khair Academy is recognised by the {cfg.RECOGNISED_BY} under {cfg.RECOGNITION_ACT}. '
+             f'The recognition was renewed on {cfg.RECOGNITION_DATE}.')
+    return f'''<section class="sec{" soft" if soft else ""}" id="recognition"><div class="wrap">
+  {sec_head('Government Recognition', 'A recognised school', intro)}
+  <div class="facts-list">
+    {facts}
   </div>
 </div></section>'''
 
