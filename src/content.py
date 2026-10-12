@@ -24,6 +24,7 @@ FOCUS = {
     'principal-office': '50% 55%', 'trip-lalbagh': '50% 55%',
     'hero-children': '50% 60%', 'campus': '50% 60%',
     'trip-rajwada': '50% 72%',
+    'flag-pyramid': '50% 45%', 'mic-speech': '50% 25%', 'kes-flag-march': '50% 50%',
     'urooj-speech': '65% 40%', 'jashn-speech': '30% 40%',
 }
 
@@ -35,6 +36,9 @@ GALLERY = [
     ('gandhi-smile', 'A student dressed as Mahatma Gandhi', 'events'),
     ('freedom-fighters', 'Students dressed as freedom fighters', 'events'),
     ('costume-drama', 'Students in costume for a history drama', 'events'),
+    ('flag-pyramid', 'Human pyramid with the tricolour at the annual function', 'events'),
+    ('mic-speech', 'A student speaking on stage', 'events'),
+    ('kes-flag-march', 'Marching with the school banner at the KES Olympiad 2025', 'sports achievements'),
     ('plant-girl-1', 'Plantation drive: planting a sapling', 'plantation'),
     ('plant-boy', 'Plantation drive: potting a plant', 'plantation'),
     ('plant-girl-2', 'Plantation drive: a student with her plant', 'plantation'),

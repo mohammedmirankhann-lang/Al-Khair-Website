@@ -61,9 +61,9 @@ def three_c():
     return f'''<section class="sec soft"><div class="wrap">
   {sec_head('The 3C Framework', 'Creativity · Confidence · Character', center=True)}
   <div class="h-c3">
-    {fig('costume-drama', 'Students in costume performing a history drama on stage', 'Creativity', 'Drama, craft and role play that spark imagination.')}
-    {fig('tricolour-dance', 'Young students dancing with tricolour ribbons on stage', 'Confidence', 'A voice on every stage, from assembly to olympiad.')}
-    {fig('freedom-fighters', 'Students dressed as freedom fighters on Independence Day', 'Character', 'Honesty, respect and love for the nation, every day.')}
+    {fig('flag-pyramid', 'Students forming a human pyramid and raising the tricolour on stage', 'Creativity', 'Drama, craft and role play that spark imagination.')}
+    {fig('mic-speech', 'A student speaking confidently on stage with a microphone', 'Confidence', 'A voice on every stage, from assembly to olympiad.')}
+    {fig('kes-flag-march', 'Al-Khair students marching with the school banner at the KES Olympiad 2025', 'Character', 'Honesty, respect and love for the nation, every day.')}
   </div>
 </div></section>'''
 
