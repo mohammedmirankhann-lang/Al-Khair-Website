@@ -18,13 +18,13 @@ public/                 Everything the website serves (Vercel output directory)
 src/                    Generates the HTML pages
   build.py              Entry point
   config.py             School facts: name, phone, address, board, social links, SEO data
-  content.py            Editable lists: notice, gallery, team, messages, FAQ, photo focal points
+  content.py            Editable lists: notice, gallery sections, team, messages, FAQ, photo focal points
   components.py         Shared parts: header, footers, enquiry form, bands, image helper
   pages/                One file per page (home, leadership, community, gallery,
                         admissions, contact, privacy, not_found)
 
 tools/add_photo.py      Resizes and grades a new photo to match the rest of the site
-docs/                   Launch checklist and notes
+docs/                   Launch checklist, photo guidelines
 vercel.json             Hosting: output folder, clean URLs, redirects, headers, caching
 ```
 
@@ -45,11 +45,13 @@ To preview without a server: `python3 src/build.py --preview /tmp/preview` and o
 
 ## Adding a photo
 
+Read [docs/photo-guidelines.md](docs/photo-guidelines.md) first: which photos to choose, how to send them, and the rules for the gallery sections.
+
 ```
 python3 tools/add_photo.py ~/Downloads/new-photo.jpg sports-day
 ```
 
-Then add it to a page or to `GALLERY` in `src/content.py`. If the subject is not in the centre,
+Then add it to a page or to the right section of `GALLERY` in `src/content.py`. If the subject is not in the centre,
 add a focal point to `FOCUS` (for example `'sports-day': '50% 30%'` keeps faces near the top in view).
 Run the build.
 

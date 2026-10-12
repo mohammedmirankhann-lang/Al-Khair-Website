@@ -32,14 +32,13 @@
   /* ---------- gallery filter + lightbox ---------- */
   var gallery = document.querySelector('.gallery');
   if (gallery) {
-    var items = Array.prototype.slice.call(gallery.querySelectorAll('button[data-cat]'));
+    var groups = Array.prototype.slice.call(gallery.querySelectorAll('.g-group'));
+    var items = Array.prototype.slice.call(gallery.querySelectorAll('.g-grid button'));
     document.querySelectorAll('.filters button').forEach(function (fb) {
       fb.addEventListener('click', function () {
         var cat = fb.getAttribute('data-filter');
         document.querySelectorAll('.filters button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === fb)); });
-        items.forEach(function (it) {
-          it.hidden = !(cat === 'all' || it.getAttribute('data-cat').split(' ').indexOf(cat) > -1);
-        });
+        groups.forEach(function (g) { g.hidden = !(cat === 'all' || g.getAttribute('data-cat') === cat); });
       });
     });
 
@@ -47,7 +46,7 @@
     var lbImg = lb.querySelector('img');
     var lbCap = lb.querySelector('.lb-cap');
     var current = 0, startX = null, lastFocus = null;
-    function visible() { return items.filter(function (i) { return !i.hidden; }); }
+    function visible() { return items.filter(function (i) { return !i.closest('.g-group').hidden; }); }
     function show(idx) {
       var list = visible(); if (!list.length) return;
       current = (idx + list.length) % list.length;

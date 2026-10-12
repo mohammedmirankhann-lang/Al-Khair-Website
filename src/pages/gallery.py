@@ -1,20 +1,30 @@
-"""Gallery: filterable photo grid with a full-screen viewer (behaviour in main.js)."""
+"""Gallery: photos in sections with sub-headings, a filter bar and a full-screen viewer (behaviour in main.js)."""
 from components import breadcrumb_schema, contact_band, page_head, pic
-from content import GALLERY, GALLERY_FILTERS
+from content import GALLERY
 from pages import Page
+
+SIZES = '(max-width: 760px) 50vw, 33vw'
+
+
+def section(key, title, photos):
+    tiles = ''.join(f'<button type="button">{pic(n, alt, SIZES, full=True)}</button>' for n, alt in photos)
+    return f'''<section class="g-group" id="{key}" data-cat="{key}" aria-labelledby="{key}-title">
+    <div class="g-head"><h2 id="{key}-title">{title}</h2><span class="g-count">{len(photos)} photos</span></div>
+    <div class="g-grid">{tiles}</div>
+  </section>'''
 
 
 def render():
+    chips = [('all', 'All')] + [(key, label) for key, _, label, _ in GALLERY]
     filters = ''.join(f'<button type="button" data-filter="{k}" aria-pressed="{str(k == "all").lower()}">{label}</button>'
-                      for k, label in GALLERY_FILTERS)
-    photos = ''.join(f'<button type="button" data-cat="{cats}">{pic(n, alt, "(max-width: 760px) 50vw, 33vw", full=True)}</button>'
-                     for n, alt, cats in GALLERY)
+                      for k, label in chips)
+    sections = '\n  '.join(section(key, title, photos) for key, title, _, photos in GALLERY)
     body = page_head('Gallery', 'Life at Al-Khair',
                      'Moments from our classrooms, events, achievements, sports, visits and community. '
                      'Tap any photo to view it full screen.', 'Gallery') + f'''
-<section class="sec"><div class="wrap">
+<section class="sec"><div class="wrap gallery">
   <div class="filters" role="group" aria-label="Filter photos">{filters}</div>
-  <div class="gallery">{photos}</div>
+  {sections}
 </div></section>
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
   <figure><img alt=""></figure>

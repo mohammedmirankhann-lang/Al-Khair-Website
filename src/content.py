@@ -1,7 +1,8 @@
 """Editable content: lists and text blocks that change more often than the page layout.
 
 To add a gallery photo: put it in public/assets/img with tools/add_photo.py,
-then add one line to GALLERY below.
+then add one line to the right section of GALLERY below.
+See docs/photo-guidelines.md for which photos to choose.
 """
 from config import PHONE_DISPLAY, EMAIL
 
@@ -26,52 +27,75 @@ FOCUS = {
     'trip-rajwada': '50% 72%',
     'flag-pyramid': '50% 45%', 'mic-speech': '50% 25%', 'kes-flag-march': '50% 50%',
     'urooj-speech': '65% 40%', 'jashn-speech': '30% 40%',
+    'leaders-student': '50% 30%', 'nursery-nasheed': '50% 75%', 'gandhi-programme': '50% 45%',
+    'plant-boy-2': '50% 55%', 'plant-boy-3': '50% 55%', 'nursery-play': '50% 35%', 'book-fair': '50% 30%',
+    'montessori-postman': '50% 5%', 'montessori-doctor': '50% 15%',
 }
 
-# Gallery page: (image name, caption / alt text, categories separated by spaces)
+# Gallery page, shown as sections with sub-headings, in this order.
+# Each section: (key, sub-heading, short filter label, [(image name, caption / alt text), ...])
+# Keep each section to a multiple of 3 photos where possible, so every row is full on computers.
 GALLERY = [
-    ('stage-dance', 'Nursery students performing on Independence Day', 'events'),
-    ('independence', 'Independence Day programme on the school stage', 'events'),
-    ('tricolour-dance', 'Tricolour ribbon dance on stage', 'events'),
-    ('gandhi-smile', 'A student dressed as Mahatma Gandhi', 'events'),
-    ('freedom-fighters', 'Students dressed as freedom fighters', 'events'),
-    ('costume-drama', 'Students in costume for a history drama', 'events'),
-    ('flag-pyramid', 'Human pyramid with the tricolour at the annual function', 'events'),
-    ('mic-speech', 'A student speaking on stage', 'events'),
-    ('kes-flag-march', 'Marching with the school banner at the KES Olympiad 2025', 'sports achievements'),
-    ('plant-girl-1', 'Plantation drive: planting a sapling', 'plantation'),
-    ('plant-boy', 'Plantation drive: potting a plant', 'plantation'),
-    ('plant-girl-2', 'Plantation drive: a student with her plant', 'plantation'),
-    ('plant-girl-3', 'Plantation drive: caring for a young plant', 'plantation'),
-    ('football-team', 'Students lined up for a football match', 'sports'),
-    ('principal-office', 'The Principal welcoming a young student', 'campus'),
-    ('dance', 'Students forming a human pyramid at the annual function', 'events'),
-    ('awards', 'National Winner recognition at the Propel Shiksha Awards', 'achievements'),
-    ('kes-olympiad', 'Trophy presentation at the KES Olympiad 2025', 'achievements sports'),
-    ('montessori-hospital', 'Montessori role play: the hospital corner', 'classrooms'),
-    ('montessori-grocer', 'Montessori role play: the green grocer stall', 'classrooms'),
-    ('trip-rajwada', 'Educational visit to Rajwada, Indore', 'visits'),
-    ('trip-lalbagh', 'Educational visit to Lal Bagh Palace, Indore', 'visits'),
-    ('sports-trophy', 'Al-Khair team with their trophy at an inter-school event', 'sports achievements'),
-    ('prizes', 'Young students with their prize trophies', 'achievements'),
-    ('hero-children', 'Students in festive dress at a school celebration', 'events'),
-    ('trip-heritage', 'Students on a heritage visit', 'visits'),
-    ('confidence', 'A student speaking on stage', 'events'),
-    ('trip-hall', 'Students on an educational visit', 'visits'),
-    ('urooj-stage', 'UROOJ 2026, Unfolding Stories of Success, Indore', 'community'),
-    ('urooj-girls', 'Students registering at UROOJ 2026', 'community'),
-    ('jashn-group', 'Jashn-e-Azadi community celebration', 'community'),
-    ('football', 'Students heading onto the football ground', 'sports'),
-    ('flags', 'Young students performing with the tricolour', 'events'),
-    ('trip-garden', 'Girls on an educational visit', 'visits'),
-    ('award', 'A student receiving a prize with his family', 'events achievements'),
-    ('campus', 'Students walking to class past the school bus', 'campus'),
-]
-
-GALLERY_FILTERS = [
-    ('all', 'All'), ('events', 'Events'), ('achievements', 'Achievements'), ('classrooms', 'Classrooms'),
-    ('sports', 'Sports'), ('plantation', 'Plantation Drive'), ('visits', 'Educational Visits'),
-    ('community', 'Community'), ('campus', 'Campus'),
+    ('events', 'Events &amp; Celebrations', 'Events', [
+        ('stage-dance', 'Nursery students performing on Independence Day'),
+        ('flag-pyramid', 'Human pyramid with the tricolour at the annual function'),
+        ('nursery-nasheed', 'Nursery students presenting a nasheed on stage'),
+        ('tricolour-dance', 'Tricolour ribbon dance on stage'),
+        ('mic-speech', 'A student speaking on stage'),
+        ('independence', 'Independence Day programme on the school stage'),
+        ('gandhi-smile', 'A student dressed as Mahatma Gandhi'),
+        ('gandhi-programme', 'Students dressed as Mahatma Gandhi at a school programme'),
+        ('freedom-fighters', 'Students dressed as freedom fighters'),
+        ('costume-drama', 'Students in costume for a history drama'),
+        ('dance', 'Students forming a human pyramid at the annual function'),
+        ('hero-children', 'Students in festive dress at a school celebration'),
+        ('confidence', 'A student speaking on stage'),
+        ('flags', 'Young students performing with the tricolour'),
+    ]),
+    ('achievements', 'Achievements &amp; Sports', 'Achievements &amp; Sports', [
+        ('awards', 'National Winner recognition at the Propel Shiksha Awards'),
+        ('kes-olympiad', 'Trophy presentation at the KES Olympiad 2025'),
+        ('sports-trophy', 'Al-Khair team with their trophy at an inter-school event'),
+        ('kes-flag-march', 'Marching with the school banner at the KES Olympiad 2025'),
+        ('kes-team-banner', 'The Al-Khair team at the KES Olympiad 2025'),
+        ('prizes', 'Young students with their prize trophies'),
+        ('award', 'A student receiving a prize with his family'),
+        ('football-team', 'Students lined up for a football match'),
+        ('football', 'Students heading onto the football ground'),
+    ]),
+    ('classrooms', 'Montessori &amp; Nursery', 'Montessori', [
+        ('montessori-hospital', 'Montessori role play: the hospital corner'),
+        ('montessori-doctor', 'Montessori role play: a young doctor and her patient'),
+        ('montessori-postman', 'Montessori role play: the Al-Khair post office'),
+        ('montessori-grocer', 'Montessori role play: the green grocer stall'),
+        ('nursery-play', 'Play time in the Nursery'),
+    ]),
+    ('plantation', 'Plantation Drive', 'Plantation Drive', [
+        ('plant-girl-1', 'Plantation drive: planting a sapling'),
+        ('plant-boy', 'Plantation drive: potting a plant'),
+        ('plant-boy-2', 'Plantation drive: planting a croton'),
+        ('plant-girl-2', 'Plantation drive: a student with her plant'),
+        ('plant-boy-3', 'Plantation drive: planting a young sapling'),
+        ('plant-girl-3', 'Plantation drive: caring for a young plant'),
+    ]),
+    ('visits', 'Educational Visits', 'Educational Visits', [
+        ('trip-rajwada', 'Educational visit to Rajwada, Indore'),
+        ('trip-lalbagh', 'Educational visit to Lal Bagh Palace, Indore'),
+        ('book-fair', 'Students exploring books at a book fair'),
+        ('trip-heritage', 'Students on a heritage visit'),
+        ('trip-hall', 'Students on an educational visit'),
+        ('trip-garden', 'Girls on an educational visit'),
+    ]),
+    ('community', 'Community', 'Community', [
+        ('urooj-stage', 'UROOJ 2026, Unfolding Stories of Success, Indore'),
+        ('urooj-girls', 'Students registering at UROOJ 2026'),
+        ('jashn-group', 'Jashn-e-Azadi community celebration'),
+    ]),
+    ('campus', 'Campus &amp; Leadership', 'Campus', [
+        ('leaders-student', 'Our Director and Principal with a student'),
+        ('principal-office', 'The Principal welcoming a young student'),
+        ('campus', 'Students walking to class past the school bus'),
+    ]),
 ]
 
 # Leadership messages: (photo, name, role, paragraphs)
