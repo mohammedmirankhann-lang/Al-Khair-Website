@@ -12,6 +12,9 @@ Live at **https://alkhairacademy.in** since October 2026.
       Breadcrumb structured data, Open Graph share image, descriptive alt text, sitemap and robots.txt
 - [x] Photos graded to one consistent look; every photo grid uses uniform shapes
 - [x] Code organised into `src/` (generator) and `public/` (served site); see README.md
+- [x] Government recognition details added (Recognition Code 82237, School ID PS82237, Zila Shiksha Kendra Indore, valid to 31 March 2028)
+- [x] Admissions wording follows the RTE Act: no admission test or screening
+- [x] Gallery in sections with sub-headings; photo guidelines in docs/photo-guidelines.md
 
 ## Content to confirm with the school
 
