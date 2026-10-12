@@ -309,7 +309,7 @@ home = f'''
   <div class="vision"><span>Our Vision</span> Success Here and the Hereafter</div>
   <div class="btn-row"><a class="btn btn-primary" href="{L('admissions', 'enquiry')}">Enquire Now</a>
   <a class="btn btn-ghost" href="https://wa.me/{WA}" target="_blank" rel="noopener">WhatsApp Us</a></div>
-  <div class="opening-photo"><div class="frame">{pic('hero-children', 'Al-Khair Academy students together at a school celebration', '(max-width: 1140px) 100vw, 1140px', eager=True)}</div></div>
+  <div class="opening-photo"><div class="frame">{pic('stage-dance', 'Nursery students performing on the Al-Khair Academy stage in front of the school crest', '(max-width: 1140px) 100vw, 1140px', eager=True, style='aspect-ratio:2/1;object-position:50% 62%')}</div></div>
   <div class="facts">
     <div><b>State Board</b><span>CBSE Pattern</span></div>
     <div><b>Nursery–8</b><span>Classes</span></div>
@@ -318,18 +318,26 @@ home = f'''
   </div>
 </div></section>
 
-<section class="sec"><div class="wrap stack" style="justify-items:center;text-align:center">
-  <span class="eyebrow">Our Belief</span>
-  <p class="h-quote">Every child is unique. Education should help each child <em>discover their own potential.</em></p>
-  <div class="rule center"><i></i></div>
+<section class="sec"><div class="wrap seed">
+  <div class="stack">
+    <span class="eyebrow">Our Belief</span>
+    <p class="h-quote" style="text-align:left;margin:0">Every child is unique. Like a seed, each one already holds <em>everything it can become.</em></p>
+    <div class="rule"><i></i></div>
+    <p class="muted">With care, patience and the right conditions, it grows. That is how we see every child who walks through our doors.</p>
+  </div>
+  <div class="seed-photos">
+    {C('plant-girl-1', 'A student planting a sapling in front of the Al-Khair Academy crest', '(max-width: 860px) 33vw, 20vw', style='object-position:50% 70%')}
+    {C('plant-boy', 'A student potting a plant during the school plantation drive', '(max-width: 860px) 33vw, 20vw', style='object-position:50% 70%')}
+    {C('plant-girl-3', 'A student caring for a young plant at school', '(max-width: 860px) 33vw, 20vw', style='object-position:50% 70%')}
+  </div>
 </div></section>
 
 <section class="sec soft"><div class="wrap">
   <div class="sec-head center"><span class="eyebrow">The 3C Framework</span><h2>Creativity · Confidence · Character</h2><div class="rule center"><i></i></div></div>
   <div class="h-c3">
-    <figure>{C('montessori-grocer', 'Nursery children running a green grocer stall in a role-play activity', '(max-width: 700px) 100vw, 33vw', style='object-position:50% 40%')}<figcaption><b>Creativity</b><span>Imagining, making and solving, by hand.</span></figcaption></figure>
-    <figure>{C('confidence', 'A student speaking on stage with a microphone', '(max-width: 700px) 100vw, 33vw', style='object-position:50% 22%')}<figcaption><b>Confidence</b><span>A voice on every stage, from assembly to olympiad.</span></figcaption></figure>
-    <figure>{C('trip-heritage', 'Students standing together on an educational heritage visit', '(max-width: 700px) 100vw, 33vw')}<figcaption><b>Character</b><span>Honesty, respect and kindness, every day.</span></figcaption></figure>
+    <figure>{C('costume-drama', 'Students in costume performing a history drama on stage', '(max-width: 700px) 100vw, 33vw', style='object-position:50% 30%')}<figcaption><b>Creativity</b><span>Drama, craft and role play that spark imagination.</span></figcaption></figure>
+    <figure>{C('tricolour-dance', 'Young students dancing with tricolour ribbons on stage', '(max-width: 700px) 100vw, 33vw', style='object-position:50% 25%')}<figcaption><b>Confidence</b><span>A voice on every stage, from assembly to olympiad.</span></figcaption></figure>
+    <figure>{C('freedom-fighters', 'Students dressed as freedom fighters on Independence Day', '(max-width: 700px) 100vw, 33vw', style='object-position:50% 25%')}<figcaption><b>Character</b><span>Honesty, respect and love for the nation, every day.</span></figcaption></figure>
   </div>
 </div></section>
 
@@ -339,22 +347,22 @@ home = f'''
     <a href="{L('gallery')}">{C('montessori-hospital', 'Nursery children playing doctor in a Montessori role-play corner', S)}<h3>Montessori Nursery</h3><p>Learning by doing, from age 3.</p></a>
     <a href="{PROPEL}" target="_blank" rel="noopener"><div class="tv pattern">{ICON['tv']}</div><h3>Smart Class</h3><p>Propel audio-visual lessons on smart TVs.</p></a>
     <a href="{UQ}" target="_blank" rel="noopener"><div class="tv pattern">{ICON['quran']}</div><h3>Understanding Quran</h3><p>Meaning, hadith, duas and sunnah, from a young age.</p></a>
-    <a href="{L('community')}">{C('dance', 'Students forming a human pyramid at the annual function', S)}<h3>Activities</h3><p>Olympiads, sports, visits and the annual function.</p></a>
+    <a href="{L('community')}">{C('football-team', 'Al-Khair students lined up for a football match', S, style='object-position:50% 35%')}<h3>Activities</h3><p>Olympiads, sports, visits and the annual function.</p></a>
   </div>
 </div></section>
 
 <section class="sec soft"><div class="wrap">
   <div class="sec-head center"><span class="eyebrow">A Glimpse of Al-Khair</span><h2>Life at our school</h2><div class="rule center"><i></i></div></div>
   <div class="glimpse">
-    <div class="cell big">{pic('independence', 'Independence Day programme on the Al-Khair Academy stage', '(max-width: 700px) 100vw, 50vw')}</div>
+    <div class="cell big">{pic('hero-children', 'Smiling Al-Khair students in festive dress at a school celebration', '(max-width: 700px) 100vw, 50vw', style='object-position:50% 60%')}</div>
     <div class="cell wide">{pic('awards', 'Al-Khair Academy team receiving National Winner recognition at the Propel Shiksha Awards', '(max-width: 700px) 100vw, 50vw')}<span class="tag">National Winner · Propel Shiksha Awards</span></div>
     {C('kes-olympiad', 'Al-Khair students receiving a trophy at the KES Olympiad 2025', S)}
     {C('prizes', 'Young students with their prize trophies', S, style='object-position:50% 30%')}
-    <div class="cell tall">{pic('trip-rajwada', 'Students on an educational visit to Rajwada, Indore', S, style='object-position:50% 75%')}</div>
+    <div class="cell tall">{pic('gandhi-smile', 'A smiling student dressed as Mahatma Gandhi on Independence Day', S, style='object-position:50% 30%')}</div>
     <div class="cell wide">{pic('trip-lalbagh', 'Students on an educational visit to Lal Bagh Palace, Indore', '(max-width: 700px) 100vw, 50vw')}</div>
-    <div class="cell tall">{pic('flags', 'Young students performing with the tricolour', S, style='object-position:50% 30%')}</div>
+    <div class="cell tall">{pic('trip-rajwada', 'Students on an educational visit to Rajwada, Indore', S, style='object-position:50% 75%')}</div>
     {C('sports-trophy', 'Al-Khair team with their trophy at an inter-school event', S)}
-    {C('urooj-girls', 'Students at the UROOJ 2026 programme in Indore', S)}
+    {C('principal-office', 'The Principal welcoming a young student with a gift', S, style='object-position:50% 55%')}
   </div>
   <p style="margin-top:28px;text-align:center"><a class="link-arrow" href="{L('gallery')}">View the full gallery →</a></p>
 </div></section>
@@ -494,7 +502,18 @@ write('community', 'community.html', 'Community | KES, Urooj & Learning in Khajr
 
 # ================= GALLERY =================
 G = [
+ ('stage-dance', 'Nursery students performing on Independence Day', 'events', True),
  ('independence', 'Independence Day programme on the school stage', 'events', True),
+ ('tricolour-dance', 'Tricolour ribbon dance on stage', 'events', False),
+ ('gandhi-smile', 'A student dressed as Mahatma Gandhi', 'events', False),
+ ('freedom-fighters', 'Students dressed as freedom fighters', 'events', False),
+ ('costume-drama', 'Students in costume for a history drama', 'events', False),
+ ('plant-girl-1', 'Plantation drive: planting a sapling', 'plantation', False),
+ ('plant-boy', 'Plantation drive: potting a plant', 'plantation', False),
+ ('plant-girl-2', 'Plantation drive: a student with her plant', 'plantation', False),
+ ('plant-girl-3', 'Plantation drive: caring for a young plant', 'plantation', False),
+ ('football-team', 'Students lined up for a football match', 'sports', False),
+ ('principal-office', 'The Principal welcoming a young student', 'campus', False),
  ('dance', 'Students forming a human pyramid at the annual function', 'events', False),
  ('awards', 'National Winner recognition at the Propel Shiksha Awards', 'achievements', False),
  ('kes-olympiad', 'Trophy presentation at the KES Olympiad 2025', 'achievements sports', False),
@@ -519,10 +538,10 @@ G = [
  ('campus', 'Students walking to class past the school bus', 'campus', False),
  ('jashn-speech', 'Address at the Jashn-e-Azadi celebration', 'community', False),
 ]
-POS = {'confidence': 'object-position:50% 30%', 'flags': 'object-position:50% 30%', 'trip-rajwada': 'object-position:50% 75%', 'campus': 'object-position:50% 60%'}
+POS = {'plant-girl-1': 'object-position:50% 70%', 'plant-boy': 'object-position:50% 70%', 'plant-girl-2': 'object-position:50% 70%', 'plant-girl-3': 'object-position:50% 70%', 'tricolour-dance': 'object-position:50% 25%', 'gandhi-smile': 'object-position:50% 30%', 'freedom-fighters': 'object-position:50% 25%', 'costume-drama': 'object-position:50% 30%', 'football-team': 'object-position:50% 35%', 'principal-office': 'object-position:50% 55%', 'confidence': 'object-position:50% 30%', 'flags': 'object-position:50% 30%', 'trip-rajwada': 'object-position:50% 75%', 'campus': 'object-position:50% 60%'}
 gal = ''.join(f'<button type="button" class="{"wide" if w else ""}" data-cat="{c}">{pic(n, a, "(max-width: 760px) 50vw, 33vw", full=True, style=POS.get(n, ""))}</button>' for n, a, c, w in G)
 filters = ''.join(f'<button type="button" data-filter="{k}" aria-pressed="{"true" if k == "all" else "false"}">{v}</button>' for k, v in
-  [('all', 'All'), ('events', 'Events'), ('achievements', 'Achievements'), ('classrooms', 'Classrooms'), ('sports', 'Sports'), ('visits', 'Educational Visits'), ('community', 'Community'), ('campus', 'Campus')])
+  [('all', 'All'), ('events', 'Events'), ('achievements', 'Achievements'), ('classrooms', 'Classrooms'), ('sports', 'Sports'), ('plantation', 'Plantation Drive'), ('visits', 'Educational Visits'), ('community', 'Community'), ('campus', 'Campus')])
 gallery = page_head('Gallery', 'Life at Al-Khair', 'Moments from our classrooms, events, achievements, sports, visits and community. Tap any photo to view it full screen.', 'Gallery') + f'''
 <section class="sec"><div class="wrap">
   <div class="filters" role="group" aria-label="Filter photos">{filters}</div>

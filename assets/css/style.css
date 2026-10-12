@@ -522,3 +522,11 @@ fieldset.field{border:0;padding:0;margin:0}
 .h-contact .base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:18px;font-size:.8rem;border-top:1px solid rgba(255,255,255,.12)}
 .h-contact .base a{color:#E5EAF0}
 @media (max-width:820px){.h-contact .top{grid-template-columns:auto 1fr}.h-contact .top .btn-row{grid-column:1/-1}.h-contact .grid{grid-template-columns:1fr}.h-contact .grid>div,.h-contact .grid>div+div{padding:18px 0;border-left:0;border-top:1px solid rgba(255,255,255,.12)}}
+
+/* ===== V7: seed band ===== */
+.seed{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.seed-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding-top:24px}
+.seed-photos .cell{aspect-ratio:3/4;border-bottom:3px solid var(--gold)}
+.seed-photos .cell:nth-child(2){transform:translateY(-24px)}
+@media (max-width:860px){.seed{grid-template-columns:minmax(0,1fr);gap:28px}.seed-photos{padding-top:0}.seed-photos .cell:nth-child(2){transform:none}}
+.gallery{grid-auto-flow:dense}
