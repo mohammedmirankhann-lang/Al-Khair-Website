@@ -2,11 +2,10 @@
 (function () {
   'use strict';
 
-  /* ---------- SETTINGS (edit before launch) ---------- */
+  /* ---------- SETTINGS ---------- */
   var SETTINGS = {
-    whatsapp: '916264672034',          // school WhatsApp number, country code first, digits only
-    // Optional form service URL (e.g. a Formspree / Netlify / Webflow form endpoint).
-    // Leave empty to send enquiries through WhatsApp only.
+    whatsapp: '916264672034',          // school WhatsApp number, country code first, digits only (same as src/config.py)
+    // Optional form service URL (e.g. a Formspree endpoint). Leave empty to send enquiries through WhatsApp only.
     formEndpoint: ''
   };
 
@@ -29,24 +28,6 @@
       }
     });
   }
-
-  /* ---------- "What We Offer" dropdown ---------- */
-  document.querySelectorAll('.dd > button').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var dd = b.parentElement;
-      var open = !dd.classList.contains('open');
-      dd.classList.toggle('open', open);
-      b.setAttribute('aria-expanded', String(open));
-    });
-  });
-  document.addEventListener('click', function (e) {
-    document.querySelectorAll('.dd.open').forEach(function (dd) {
-      if (!dd.contains(e.target) && window.matchMedia('(min-width: 941px)').matches) {
-        dd.classList.remove('open');
-        dd.querySelector('button').setAttribute('aria-expanded', 'false');
-      }
-    });
-  });
 
   /* ---------- gallery filter + lightbox ---------- */
   var gallery = document.querySelector('.gallery');
