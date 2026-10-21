@@ -172,6 +172,15 @@
     }
   });
 
+  /* ---------- photo protection ----------
+     Blocks right-click "Save image", dragging photos out of the page and long-press saving.
+     It discourages casual saving only; screenshots cannot be blocked by any website. */
+  ['contextmenu', 'dragstart'].forEach(function (type) {
+    document.addEventListener(type, function (e) {
+      if (e.target.tagName === 'IMG' || e.target.closest('.cell, .g-grid, .frame, .portrait, .lightbox, .uniform')) e.preventDefault();
+    });
+  });
+
   /* ---------- footer year ---------- */
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
