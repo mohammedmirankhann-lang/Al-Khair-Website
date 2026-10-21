@@ -29,6 +29,7 @@ FOCUS = {
     'urooj-speech': '65% 40%', 'jashn-speech': '30% 40%',
     'leaders-student': '50% 30%', 'nursery-nasheed': '50% 75%', 'gandhi-programme': '50% 45%',
     'plant-boy-2': '50% 55%', 'plant-boy-3': '50% 55%', 'nursery-play': '50% 35%', 'book-fair': '50% 30%',
+    'smart-class': '65% 50%',
     'montessori-postman': '50% 5%', 'montessori-doctor': '50% 15%',
 }
 
