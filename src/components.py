@@ -104,8 +104,6 @@ ICON = {
     'menu': '<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>',
     'phone': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z"/></svg>',
     'wa': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4.3-1.2z"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2z"/></svg>',
-    'tv': '<svg viewBox="0 0 36 36" aria-hidden="true"><rect x="4" y="7" width="28" height="18" rx="1"/><path d="M13 31h10M18 25v6"/><path class="g" d="M15 12v8l7-4z"/></svg>',
-    'quran': '<svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 10c-4-3-9-3-13-2v19c4-1 9-1 13 2 4-3 9-3 13-2V8c-4-1-9-1-13 2z"/><path d="M18 10v19"/><path class="g" d="M9 14h5M9 18h5M22 14h5M22 18h5"/></svg>',
     'ig': '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg>',
     'yt': '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5"/><path d="M10 9.5v5l4.5-2.5z"/></svg>',
 }

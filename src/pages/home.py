@@ -1,6 +1,6 @@
 """Home: crest and vision, belief, 3C, how we teach, a glimpse of school life, notice."""
 import config as cfg
-from components import WHATSAPP_URL, ICON, asset, cell, ext, link, pic, rule, sec_head
+from components import WHATSAPP_URL, asset, cell, ext, link, pic, rule, sec_head
 from content import NOTICE
 from pages import Page
 
@@ -75,7 +75,7 @@ def how_we_teach():
   <div class="teach">
     <a href="{link('gallery')}">{cell('montessori-hospital', 'Nursery children playing doctor in a Montessori role-play corner', QUARTER)}<h3>Montessori Nursery</h3><p>Learning by doing, from age 3.</p></a>
     {ext(cfg.PROPEL, cell('smart-class', 'A smart class session at Al-Khair Academy with lessons shown on the smart TV', QUARTER) + '<h3>Smart Class</h3><p>Propel audio-visual lessons on smart TVs.</p>')}
-    {ext(cfg.UNDERSTAND_QURAN, f'<div class="tv pattern">{ICON["quran"]}</div><h3>Understanding Quran</h3><p>Meaning, hadith, duas and sunnah, from a young age.</p>')}
+    {ext(cfg.UNDERSTAND_QURAN, f'<div class="tv pattern"><img class="partner-logo" src="{asset('img/understand-quran-logo.png')}" width="413" height="414" alt="Understand Al-Qur\'an Academy logo" loading="lazy" decoding="async"></div><h3>Understanding Quran</h3><p>Meaning, hadith, duas and sunnah, from a young age.</p>')}
     <a href="{link('community')}">{cell('football-team', 'Al-Khair students lined up for a football match', QUARTER)}<h3>Activities</h3><p>Olympiads, sports, visits and the annual function.</p></a>
   </div>
 </div></section>'''

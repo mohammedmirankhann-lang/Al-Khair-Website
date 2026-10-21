@@ -186,8 +186,7 @@ body.nav-locked{overflow:hidden}
 .teach a{display:grid;gap:12px;align-content:start;text-decoration:none;color:var(--ink)}
 .teach .cell{aspect-ratio:1/1}
 .teach .tv{aspect-ratio:1/1;background:var(--blue);display:grid;place-items:center}
-.teach .tv svg{width:72px;height:72px;stroke:var(--white);fill:none;stroke-width:1.2}
-.teach .tv svg .g{stroke:var(--gold)}
+.teach .tv .partner-logo{width:68%;height:auto;filter:drop-shadow(0 6px 16px rgba(0,0,0,.25))}   /* partner logo (PNG, shown at most ~180px from a 413px file, so it stays sharp) */
 .teach h3{font-size:1.35rem}
 .teach p{font-size:.92rem;color:var(--muted)}
 .teach a:hover h3{color:var(--blue-deep);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
